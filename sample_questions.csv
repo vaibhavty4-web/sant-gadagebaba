@@ -1,0 +1,4 @@
+Section,Question,Type,Required,Options,Max Marks
+मूलभूत माहिती,गावात ओला-सुका कचरा वर्गीकरण होते का?,yesno,Yes,,5
+घनकचरा व्यवस्थापन,कचरा संकलनाची पद्धत,select,Yes,घंटागाडी|घरपोच संकलन|इतर,5
+नोंदी,निरीक्षण / अडचणी,textarea,No,,0

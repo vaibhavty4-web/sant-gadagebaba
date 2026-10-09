@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: sant-gadge-baba-swachhata
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: SPREADSHEET_ID
+        sync: false
+      - key: GOOGLE_SERVICE_ACCOUNT_JSON
+        sync: false
+      - key: DRIVE_FOLDER_ID
+        sync: false
+      - key: SMS_PROVIDER
+        value: msg91
+      - key: MSG91_AUTHKEY
+        sync: false
+      - key: MSG91_TEMPLATE_ID
+        sync: false
+      - key: MSG91_SENDER_ID
+        sync: false
+      - key: OTP_PEPPER
+        generateValue: true
+      - key: ADMIN_PASSWORD
+        sync: false
